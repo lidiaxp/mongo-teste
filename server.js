@@ -34,7 +34,7 @@ express()
   .use(bodyParser.urlencoded({ extended: true })) // support encoded bodies
 
   .get('/api', function (req, res) {
-    res.json(200, {msg: 'OK' });
+    res.json(200, {msg: 'OKk' });
   })
 
   .get('/api/todos', function (req, res) {

@@ -1,15 +1,4 @@
 
-// https://devcenter.heroku.com/articles/mongolab
-// http://todomvc.com/examples/angularjs/#/
-var MongoClient = require('mongodb').MongoClient;
-MongoClient.connect('mongodb://lidiaxp:lidiaxp123@ds149724.mlab.com:49724/instagram', function(err, db) {
-  console.log("Connected correctly to server.");
-    res.json(200, {msg: 'Foi' });
-    
-  db.close();
-});
-
-/*
 var express  = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
@@ -31,7 +20,7 @@ var express  = require('express'),
  *
  * MONGOLAB_URI=mongodb://example:example@ds053312.mongolab.com:53312/todolist
  * 'mongodb://example:example@ds053312.mongolab.com:53312/todolist'
- *
+ */
 mongoose.connect(process.env.MONGOLAB_URI, function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
@@ -99,4 +88,4 @@ express()
   })
 
   .use(express.static(__dirname + '/'))
-  .listen(process.env.PORT || 5000);*/
+  .listen(process.env.PORT || 5000);
